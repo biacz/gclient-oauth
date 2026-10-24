@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Privacy policy</h1>
-  <p><em>Last updated: 23 October 2026</em></p>
+  <p><em>Last updated: 24 October 2026</em></p>
 
   <h2>Who uses this app</h2>
   <p>
@@ -22,18 +22,23 @@
   <ul>
     <li>Gmail – to read messages, apply labels, archive messages, create drafts, and send a
       reply only after the owner clicks “Send it” (with a 10-second undo).</li>
-    <li>Google Tasks and Google Calendar – only if the owner grants these permissions in a
-      later version: to list, add and change the owner's own tasks and events.</li>
+    <li>Google Tasks and Google Calendar – only if the owner grants these permissions: to list,
+      add, change and delete the owner's own tasks and events, and to list the owner's calendars.
+      Events are written without guests, so the app never sends invitations.</li>
   </ul>
 
   <h2>How the data is used and stored</h2>
   <ul>
     <li>Data is used only to provide the app's features to the owner.</li>
     <li>It is processed on a server the owner operates privately. Messages are cached there
-      in a local database; the OAuth token is stored there only, encrypted.</li>
+      in a local database; the OAuth token is stored there only, encrypted. Tasks and events are
+      read live from Google and not stored, apart from a link between a task or event and the
+      message it was made from.</li>
     <li>
-      To sort messages and to suggest replies, the subject, sender and text of a message are
-      sent to an AI model provider (OpenCode Zen). This happens only for the owner's own
+      To sort messages, to suggest replies and to suggest tasks and events found in a message,
+      the subject, sender and text of a message are sent to an AI model provider (OpenCode Zen).
+      Short notes the owner types to create a task or event are sent there too. The owner's
+      tasks and calendar events themselves are not sent. This happens only for the owner's own
       requests and features; the data is not used to train generalized AI models.
     </li>
     <li>Data is not sold, shared with other third parties, or used for advertising.</li>
@@ -54,10 +59,12 @@
   <hr>
   <p lang="de">
     Kurz auf Deutsch: Privater Mail-Client mit genau einem Nutzer, dem Eigentümer. Zugriff auf
-    dessen Gmail (später optional Aufgaben und Kalender) nur für dessen eigene Nutzung.
-    Verarbeitung auf einem privat betriebenen Server. Zum Sortieren und für Antwortvorschläge
-    gehen Betreff, Absender und Text einer Mail an einen KI-Anbieter (OpenCode Zen), ohne
-    Training allgemeiner Modelle. Keine sonstige Weitergabe, keine Werbung. Widerruf jederzeit
+    dessen Gmail und, falls freigegeben, Aufgaben und Kalender, nur für dessen eigene Nutzung.
+    Verarbeitung auf einem privat betriebenen Server; Aufgaben und Termine werden live gelesen,
+    nicht gespeichert, Gäste nie eingeladen. Zum Sortieren, für Antwortvorschläge und für
+    Termin-/Aufgabenvorschläge gehen Betreff, Absender und Text einer Mail (und kurze eigene
+    Eingaben) an einen KI-Anbieter (OpenCode Zen), ohne Training allgemeiner Modelle; die
+    Termine und Aufgaben selbst nicht. Keine sonstige Weitergabe, keine Werbung. Widerruf jederzeit
     in der App oder über myaccount.google.com/permissions.
   </p>
 </body>
